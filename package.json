@@ -1,0 +1,19 @@
+{
+  "name": "html-ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.14",
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun ./src/index.html",
+    "build": "bun build ./src/index.html --outdir dist --minify",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check ."
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
